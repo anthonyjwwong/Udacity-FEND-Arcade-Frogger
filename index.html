@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+</head>
+<body>
+  <h1>Frogger Arcade Game</h1>
+  <div class="score">
+      <p>
+        Score: <span class = 'scoreIncrease'>0</span>
+        &nbsp; &nbsp; &nbsp;
+        Lives: <span class= 'lifeDecrease'>3</span>
+      </p>
+  </div>
+
+  <div class="char1">
+      <img src="images/char-boy.png" alt= 'boy character' class='charboy'>
+      <img src="images/char-cat-girl.png" alt= 'cat girl character' class='chargirl'>
+      <img src="images/char-horn-girl.png" alt= 'horn girl character' class='charhorn'>
+  </div>
+  <div class="char2">
+      <img src="images/char-pink-girl.png" alt= 'pink girl character' class='charpink'>
+      <img src="images/enemy-bug.png" alt= 'bug character' class='bug'>
+  </div>
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Welcome to the Frogger Arcade Game</h2>
+      </div>
+      <div class="modal-body">
+        <p>The nasty bugs have taken the princess away</p>
+        <div class="character1">
+          <img src="images/enemy-bug.png" class='bug'>
+          <img src="images/char-princess-girl.png" class='bug'>
+          <img src="images/enemy-bug.png" class='bug'>
+        </div>
+        <p>The goal of the game is to cross the river 20 times to save her</p>
+        <p>Control:<br> W, S, A, D <br> Up, Down, Left, Right</p>
+        <p>Pick a hero by clicking on the sides</p>
+        <div class="characters">
+            <img src="images/char-boy.png" class='charboy'>
+            <img src="images/char-cat-girl.png" class='chargirl'>
+            <img src="images/char-horn-girl.png" class='charhorn'>
+            <img src="images/char-pink-girl.png" class='charpink'>
+            <img src="images/enemy-bug.png" class='bug'>
+        </div>
+        <p>*You can switch heroes halfway through the game*</p>
+      </div>
+      <div class="modal-footer">
+        <p>Click anywhere else to start game</p>
+        <h3>Enjoy the game</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="endModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close1">&times;</span>
+        <h2>Awh, you lost all your lives...</h2>
+      </div>
+      <div class="modal-body">
+        <p>You ended the game with a score of <br><br><span class="endModalScore">0</span></p>
+      </div>
+      <div class="modal-footer">
+        <h3>Hope you enjoyed the game!</h3>
+        <h4>'Click anywhere else to restart'</h4>
+      </div>
+    </div>
+  </div>
+
+  <div id="winModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close1">&times;</span>
+        <h2>Congratulations! You saved the princess!</h2>
+      </div>
+      <div class="modal-body">
+        <p>You crossed the river 20 times and saved the princess!<br>
+          <img src="images/char-princess-girl.png" class='chargirl'><br>
+      <div class="modal-footer">
+        <h3>Hope you enjoyed the game!</h3>
+        <h4>'Click anywhere else to restart'</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
