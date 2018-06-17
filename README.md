@@ -20,5 +20,5 @@ Resources that helped out with this project
 ## How to start the game up
 1. Download the entire folder.
 2. Once unzipped, load index.html up in your favorite browser!
-3. or click on https://anthonyjwwong.github.io/Udacity-Arcade-Frogger-Game/
+3. or click on  https://anthonyjwwong.github.io/Udacity-FEND-Arcade-Frogger/
 #Udacity-Arcade-Frogger-Game
